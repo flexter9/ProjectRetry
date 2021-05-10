@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{% block title %}{% endblock %} - RChat</title>
+        <title>{% block title %}{% endblock %} - Let's Chat</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <!-- Custom css for prelogin pages -->
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_style1.css') }}">
     </head>
 
-    <body>
+    <body style="background:#101820FF">
         <!-- Main section start -->
         <div class="main-section">
 
-            <div class="jumbotron">
-              <h1 class="display-4">RChat</h1>
-              <p class="lead">Chat rooms are back! </p>
+            <div class="jumbotron" style="background:#FEE715FF">
+              <h1 class="display-4" style="color:#101820FF;font-family: Comic Sans MS"><b>Let's Chat</b></h1>
+              <p class="lead" style="font-family: Comic Sans MS"><b>Talk To play It Safe! </b></p>
             </div>
 
             <!-- Demo image start -->
             <div id="image-section">
                 <picture>
-                    <img class="card" src="{{ url_for('static', filename='images/demo.gif') }}" border="5px">
+                    <img class="card" src="{{ url_for('static', filename='images/chat.gif') }}" border="5px" height="500" width="350">
                 </picture>
             </div>
             <!-- Demo image end -->
@@ -54,6 +54,14 @@
             <!-- Righthand side end -->
         </div>
         <!-- Main section end -->
+        <!-- About us page redirect -->
+            <div class="aboutus">
+            <form action="{{ url_for('static', filename='aboutus.html') }}" target="_blank">
+
+                        <input type="submit" value="About Us" class="btn btn-warning">
+
+            </form>
+                 </div>
 
     </body>
 </html>

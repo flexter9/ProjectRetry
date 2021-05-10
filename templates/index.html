@@ -5,7 +5,7 @@
 
 {% block content %}
         <h2>Get started!</h2>
-        <p>First time here? Register to start using Rchat</p>
+        <p style="color:white">First time here? Register to start using "Let's Chat"</p>
 
         <form action="{{ url_for('index') }}", method="POST">
             {{ displayField(form.username, 'Username', autocomplete="off", autofocus=true) }}
@@ -16,8 +16,8 @@
             </div>
             {{ form.csrf_token }}
         </form>
-
         <hr>
+       <p style="color:white">Already registered? <a href={{url_for('login')}}>Login here</a>.</p>
 
-        <p>Already registered? <a href={{url_for('login')}}>Login here</a>.</p>
 {% endblock %}
+

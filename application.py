@@ -30,7 +30,7 @@ def load_user(id):
 socketio = SocketIO(app, manage_session=False)
 
 # Predefined rooms for chat
-ROOMS = ["lounge", "news", "games", "coding"]
+ROOMS = ["lounge", "news", "games", "coding", "Solve-My-Problem"]
 
 
 @app.route("/", methods=['GET', 'POST'])

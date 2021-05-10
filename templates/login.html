@@ -4,8 +4,9 @@
 {% block title %}Login {% endblock %}
 
 {% block content %}
+<div style="background:#101820FF">
     <h2>Login now!</h2>
-    <p>Enter you username/password to start RChat</p>
+    <p style="color:white">Enter you username/password to start "Let's Chat"</p>
 
     <form action="{{ url_for('login') }}", method="POST">
         {{ displayField(form.username, 'Username', autocomplete="off", autofocus=true) }}
@@ -13,10 +14,13 @@
         <div class="form-group">
             <input type="submit" value="Login" class="btn btn-warning">
         </div>
+
         {{ form.csrf_token }}
     </form>
 
     <hr>
-
-    <p>Have not registered? <a href={{url_for('index')}}>Register here</a>.</p>
+    <p style="display:inline-block; padding-right:60px; color: white" >Don't Have An Account? <a href={{url_for('index')}}>Register here</a>.</p>
+</div>
 {% endblock %}
+
+

@@ -72,8 +72,16 @@ h2 {
     padding:0px;
     color: red;
 }
+.aboutus {
+    padding-top: 100px;
+
+}
+
 
 input[type='text']:focus, input[type='password']:focus {
     border-color: #ffc107;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 10px #ffc107;
 }​
+
+
+
