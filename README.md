@@ -37,14 +37,6 @@ app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URL')
 
 3. Run *create.py* from the terminal to create the table to hold user credentials.
     
-```console
-foo@bar:~$ python create.py
-```
 
-## Roadmap
-Add security features relating to Input Validation, Cross Domain, Secure Transmission and Logging.
 
-*See [OWASP Cheat Sheet Series](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series#tab=Main)*.
 
-## License
-[CC-BY](https://creativecommons.org/licenses/by/3.0/)
